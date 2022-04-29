@@ -24,8 +24,9 @@ function createDreamTeam(members) {
       }else{
         ;
       }
-    }return teamName;
+    }return teamName.split('').sort().join('');
 }
+
 
 module.exports = {
   createDreamTeam
