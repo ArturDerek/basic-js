@@ -22,7 +22,7 @@ function calculateHanoi(disksNumber, turnsSpeed) {
     turns: moveNumb,
     time : time
   }
-return hanoy;
+return 'turns: '+hanoy.turns+', '+'time: ' +hanoy.time;
 }
 
 module.exports = {
