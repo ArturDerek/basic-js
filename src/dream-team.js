@@ -14,6 +14,7 @@ const { NotImplementedError } = require('../extensions/index.js');
  *
  */
 function createDreamTeam(members) {
+  if (typeof(members)==='object'){
   let teamName='';
   let t='';
     for (let i=0;i<members.length;i++){
@@ -24,7 +25,9 @@ function createDreamTeam(members) {
       }else{
         ;
       }
-    }return teamName.split('').sort().join('');
+    }return teamName.split('').sort().join('');}else{
+    return false;
+  }
 }
 
 
