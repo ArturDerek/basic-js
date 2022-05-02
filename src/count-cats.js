@@ -15,13 +15,15 @@ const { NotImplementedError } = require('../extensions/index.js');
  *
  */
 function countCats(mat) {
+  if (!mat || !mat.length) {
+    return 0
+  }
+
   let mas = mat.flat();
   let counter = 0;
   for (let i = 0; i < mas.length; i++) {
     if (mas[i] === '^^') {
       counter = counter + 1;
-    } else {
-      ;
     }
   }
   return counter;
